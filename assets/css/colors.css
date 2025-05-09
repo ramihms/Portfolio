@@ -1,14 +1,13 @@
 :root {
-  /* Thème clair (par défaut) - Couleurs de base préservées */
+  /* Thème clair (par défaut) */
   --background: #ffffff;
   --surface: #f5f5f5;
   --text-primary: #000000;
   --text-secondary: #333333;
-  --accent: #ffb6c1; /* Rose pastel */
+  --accent: #ffb6c1;
   --accent-hover: #ff99aa;
   --border: #e0e0e0;
   
-  /* Gradients roses plus prononcés pour le thème clair */
   --body-gradient: linear-gradient(135deg, #ffffff 0%, #ffe6e9 100%);
   --header-footer-gradient: linear-gradient(to right, #ffebef 0%, #f5f5f5 50%, #ffebef 100%);
   --project-card-gradient: linear-gradient(135deg, #f8f8f8 0%, #ffdee4 100%);
@@ -18,16 +17,15 @@
 }
 
 [data-theme="dark"] {
-  /* Thème sombre - Couleurs de base préservées */
+  /* Thème sombre */
   --background: #121212;
   --surface: #1e1e1e;
   --text-primary: #ffffff;
   --text-secondary: #bbbbbb;
-  --accent: #ff8fa3; /* Rose pastel légèrement plus vif pour le mode sombre */
+  --accent: #ff8fa3;
   --accent-hover: #ff768c;
   --border: #333333;
   
-  /* Gradients roses plus prononcés pour le thème sombre */
   --body-gradient: linear-gradient(135deg, #121212 0%, #261a1e 100%);
   --header-footer-gradient: linear-gradient(to right, #261a1e 0%, #1e1e1e 50%, #261a1e 100%);
   --project-card-gradient: linear-gradient(135deg, #1e1e1e 0%, #2b1e22 100%);
@@ -36,10 +34,9 @@
   --button-hover-gradient: linear-gradient(to right, #ff768c 0%, #ff4d68 100%);
 }
 
-/* Application des gradients tout en préservant les couleurs de base */
 body {
   background-image: var(--body-gradient);
-  background-color: var(--background); /* Fallback */
+  background-color: var(--background);
   color: var(--text-primary);
 }
 
@@ -48,7 +45,6 @@ header, footer {
   background-color: var(--surface); /* Fallback */
 }
 
-/* Liens - pas de changement */
 a {
   color: var(--accent);
 }
@@ -60,20 +56,19 @@ a:hover {
 /* Boutons avec gradients */
 .button-primary {
   background-image: var(--button-gradient);
-  background-color: var(--accent); /* Fallback */
+  background-color: var(--accent);
   color: var(--background);
   transition: all 0.3s ease;
 }
 
 .button-primary:hover {
   background-image: var(--button-hover-gradient);
-  background-color: var(--accent-hover); /* Fallback */
+  background-color: var(--accent-hover);
 }
 
-/* Panneaux avec gradients subtils */
 .panel {
   background-image: var(--panel-gradient);
-  background-color: var(--background); /* Fallback */
+  background-color: var(--background);
   color: var(--text-primary);
   border: 1px solid var(--border);
 }
@@ -82,10 +77,9 @@ a:hover {
   border-bottom: 1px solid var(--border);
 }
 
-/* Cartes de projet avec gradients */
 .project-card {
   background-image: var(--project-card-gradient);
-  background-color: var(--surface); /* Fallback */
+  background-color: var(--surface);
   border: 1px solid var(--border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -94,7 +88,6 @@ a:hover {
   box-shadow: 0 5px 15px rgba(255, 182, 193, 0.2);
 }
 
-/* Bouton de changement de thème avec gradient */
 .theme-toggle {
   position: absolute;
   top: 20px;
@@ -103,10 +96,10 @@ a:hover {
 
 #theme-toggle-btn {
   background-image: var(--button-gradient);
-  background-color: var(--accent); /* Fallback */
+  background-color: var(--accent);
   color: var(--background);
   border: none;
-  border-radius: 8px; /* Carré avec coins arrondis comme demandé précédemment */
+  border-radius: 8px;
   width: 40px;
   height: 40px;
   cursor: pointer;
