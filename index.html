@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rami Homsi - Portfolio</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animations.css">
+        <link rel="stylesheet" href="assets/css/colors.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="cursor-aura"></div>
+        <header>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn"
+                    aria-label="Basculer en mode sombre">
+                    <i class="icon light-icon fas fa-sun"></i>
+                    <i class="icon dark-icon fas fa-moon"></i>
+                </button>
+            </div>
+            <h1>Bienvenue sur Mon Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" data-panel="about-panel">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#" data-panel="contact-panel">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="introduction">
+                <h2>Rami Homsi</h2>
+                <p>Je crée des projets intéressants avec un accent sur le code
+                    propre et l'expérience utilisateur.</p>
+            </section>
+
+            <!-- Section Projets intégrée dans la page principale -->
+            <section id="projects" class="projects-section">
+                <h2 class="section-title reveal">Mes Projets</h2>
+                <p class="section-subtitle reveal">Découvrez quelques-uns de mes
+                    travaux récents</p>
+
+                <div class="projects-grid">
+                    <div class="project-card reveal">
+                        <h3>LLC Rules Extractor</h3>
+                        <p>Projet d'extraction de règles à partir de données
+                            linguistiques. Utilisation d'algorithmes
+                            d'apprentissage automatique pour identifier et
+                            formaliser des patterns dans le langage.</p>
+                        <a
+                            href="https://github.com/AhmedSEHILI/LLC_rules_extractor"
+                            target="_blank" class="button-primary">Voir sur
+                            GitHub</a>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <h3>Game of Life</h3>
+                        <p>Implémentation du célèbre automate cellulaire de
+                            Conway "Jeu de la Vie". Une simulation interactive
+                            qui démontre comment des règles simples peuvent
+                            créer des comportements complexes et émergents.</p>
+                        <a href="https://github.com/ethancls/GameOfLife"
+                            target="_blank" class="button-primary">Voir sur
+                            GitHub</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="panels-container">
+            <div class="panel-overlay"></div>
+
+            <!-- Panneau À propos -->
+            <div class="panel" id="about-panel">
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <h2>À propos de moi</h2>
+                        <button class="close-panel">&times;</button>
+                    </div>
+                    <div class="panel-body">
+                        <div class="cv-download">
+                            <a href="assets/files/cv.pdf" download="cv.pdf"
+                                class="button-primary cv-button" target="_blank">
+                                <i class="fas fa-download"></i> Télécharger mon CV
+                            </a>
+                        </div>
+
+                        <p>Bonjour ! Je suis étudiant en école d'ingénieurs avec
+                            une spécialisation en informatique à SupGalilée
+                            (Villetaneuse). Je suis actuellement à la recherche
+                            d'un stage technique de 2 à 4 mois dans le domaine
+                            de l'informatique pour la période de mai à août
+                            2025.</p>
+
+                        <h3>Formation</h3>
+                        <ul>
+                            <li>2023 - 2026 : École d'ingénieurs, spécialité
+                                informatique, SupGalilée (Villetaneuse)</li>
+                            <li>2021 - 2023 : Classe préparatoire ingénieur
+                                intégrée, SupGalilée (Villetaneuse)</li>
+                            <li>2021 : Baccalauréat mention bien au lycée privé
+                                Charles de Foucauld</li>
+                        </ul>
+
+                        <h3>Expérience</h3>
+                        <ul>
+                            <li>Septembre 2024 - à ce jour : Professeur
+                                particulier de mathématiques, suivi d'élèves de
+                                primaire, collège et lycée</li>
+                            <li>Août 2024 : Stage ouvrier de 1ère année
+                                d'ingénieur, TTC Transpors - Cabinet d'expert
+                                comptable
+                                <ul>
+                                    <li>Saisies comptables des factures et
+                                        relevés bancaires</li>
+                                    <li>Analyse des données financières des
+                                        entreprises</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>Compétences techniques</h3>
+                        <p><strong>Langages de programmation :</strong> C, C++,
+                            Java, Python, Julia, Matlab, HTML, CSS, JavaScript,
+                            SQL, LaTeX, MIPS</p>
+                        <p><strong>Outils de gestion :</strong> Microsoft Office
+                            (suite)</p>
+
+                        <h3>Langues</h3>
+                        <ul>
+                            <li>Anglais : Littéral et technique. Lu, écrit et
+                                parlé</li>
+                            <li>Espagnol : Lu, écrit et relativement parlé</li>
+                            <li>Arabe : Quelques notions de base, en cours
+                                d'apprentissage</li>
+                        </ul>
+
+                        <h3>Centres d'intérêt</h3>
+                        <p><strong>Sports :</strong> Volley-ball, Basketball,
+                            Football, Natation</p>
+                        <p><strong>Musique :</strong> Piano en autodidacte
+                            depuis 4 ans, Guitare depuis 3 mois, MAO depuis 5
+                            ans</p>
+                        <p><strong>Voyages :</strong> Italie, Algérie, Espagne,
+                            Royaume-Uni, Turquie, Andorre, Irlande, Allemagne,
+                            Belgique</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panneau Contact -->
+            <div class="panel" id="contact-panel">
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <h2>Me Contacter</h2>
+                        <button class="close-panel">&times;</button>
+                    </div>
+                    <div class="panel-body">
+                        <div class="contact-info">
+                            <p><strong>Email:</strong> homsirami27@gmail.com</p>
+                            <p><strong>GitHub:</strong> <a
+                                    href="https://github.com/ramihms"
+                                    target="_blank">github.com/ramihms</a></p>
+                            <p><strong>LinkedIn:</strong> <a
+                                    href="https://linkedin.com/in/ramihms"
+                                    target="_blank">linkedin.com/in/ramihms</a></p>
+                        </div>
+
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nom</label>
+                                <input type="text" id="name" name="name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="button-primary">Envoyer
+                                le Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Rami Homsi | Site Portfolio</p>
+        </footer>
+
+        <!-- Fichiers JavaScript -->
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/panels.js"></script>
+        <script src="assets/js/animations.js"></script>
+        <script src="assets/js/smooth-scroll.js"></script>
+        <script src="assets/js/cursor-effect.js"></script>
+    </body>
+</html>
