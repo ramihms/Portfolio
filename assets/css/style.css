@@ -391,11 +391,11 @@ footer {
   margin-top: 1.5rem;
 }
 
-/* Aura du curseur - Version beaucoup plus visible */
+/* Aura du curseur */
 .cursor-aura {
   position: fixed;
-  width: 850px; /* Augmentation de la taille */
-  height: 850px; /* Augmentation de la taille */
+  width: 850px;
+  height: 850px;
   border-radius: 50%;
   pointer-events: none;
   z-index: -1;
@@ -411,7 +411,7 @@ footer {
                 rgba(255, 125, 170, 0.6) 0%, 
                 rgba(255, 80, 147, 0.4) 30%,
                 rgba(255, 105, 180, 0) 70%);
-  mix-blend-mode: multiply; /* Meilleur pour le fond clair */
+  mix-blend-mode: multiply;
   box-shadow: 0 0 30px 10px rgba(255, 105, 180, 0.3);
 }
 
@@ -421,7 +421,7 @@ footer {
                 rgba(255, 143, 163, 0.8) 0%, 
                 rgba(255, 118, 140, 0.5) 30%,
                 rgba(255, 143, 163, 0) 70%);
-  mix-blend-mode: screen; /* Meilleur pour le fond sombre */
+  mix-blend-mode: screen;
   box-shadow: 0 0 30px 10px rgba(255, 143, 163, 0.2);
 }
 
